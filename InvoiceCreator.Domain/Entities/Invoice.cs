@@ -1,12 +1,15 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-
-namespace InvoiceCreator.Domain.Entities
+﻿namespace InvoiceCreator.Domain.Entities
 {
-    internal class Invoice
+    public class Invoice
     {
+        public string InvoiceNumber { get; set; }
+        public int CompanyId { get; set; }
+        public int ContractorId { get; set; }
+        public DateTime IssueDate { get; set; }
+        public DateTime DueDate { get; set; }
+        public decimal TotalAmount { get; set; }
+        public decimal TotalTaxAmount { get; set; }
+        public int InvoiceItemCount { get; set; }
+
     }
 }

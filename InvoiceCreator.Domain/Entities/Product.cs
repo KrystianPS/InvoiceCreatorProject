@@ -1,12 +1,12 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-
-namespace InvoiceCreator.Domain.Entities
+﻿namespace InvoiceCreator.Domain.Entities
 {
     internal class Product
     {
+        public string Name { get; set; }
+        public int Companyid { get; set; }
+        public string? Description { get; set; }
+        public decimal UnitNettAmount { get; set; }
+        public decimal VatRate { get; set; }
+        public decimal UnitGrossAmount { get; set; }
     }
 }

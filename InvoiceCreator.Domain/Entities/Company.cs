@@ -1,12 +1,16 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-
-namespace InvoiceCreator.Domain.Entities
+﻿namespace InvoiceCreator.Domain.Entities
 {
-    internal class Company
+    public class Company
     {
+        public string Name { get; set; }
+        public string CompanyTIN { get; set; }
+        public string Country { get; set; }
+        public string AddressLine1 { get; set; }
+        public string? AddressLine2 { get; set; }
+        public string City { get; set; }
+        public string PostalCode { get; set; }
+        public string Email { get; set; }
+        public string PhoneNumber { get; set; }
+
     }
 }
