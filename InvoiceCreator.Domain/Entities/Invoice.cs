@@ -11,5 +11,10 @@
         public decimal TotalTaxAmount { get; set; }
         public int InvoiceItemCount { get; set; }
 
+
+        public List<InvoiceItem> InvoiceItems { get; set; } = new List<InvoiceItem>();
+
+        public Company Company { get; set; }
+        public Contractor Contractor { get; set; }
     }
 }
